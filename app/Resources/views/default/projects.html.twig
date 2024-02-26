@@ -1,0 +1,246 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('{{ asset('assets/img/breadcrumbs-bg.jpg')}}');">
+      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+        <h2>Projects</h2>
+        <ol>
+          <li><a href="{{path('homepage')}}">Home</a></li>
+          <li>Projects</li>
+        </ol>
+
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Our Projects Section ======= -->
+    <section id="projects" class="projects">
+      <div class="container" data-aos="fade-up">
+
+        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
+          data-portfolio-sort="original-order">
+
+          <ul class="portfolio-flters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-remodeling">Remodeling</li>
+            <li data-filter=".filter-construction">Construction</li>
+            <li data-filter=".filter-repairs">Repairs</li>
+            <li data-filter=".filter-design">Design</li>
+          </ul><!-- End Projects Filters -->
+
+          <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+              <div class="portfolio-content h-100">
+                <img src="{{asset('assets/img/projects/remodeling-1.jpg')}}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Remodeling 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="{{asset('assets/img/projects/remodeling-1.jpg')}}" title="Remodeling 1"
+                    data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+              <div class="portfolio-content h-100">
+                <img src="{{asset('assets/img/projects/construction-1.jpg')}}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Construction 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="{{asset('assets/img/projects/construction-1.jpg')}}" title="Construction 1"
+                    data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
+              <div class="portfolio-content h-100">
+                <img src="{{asset('assets/img/projects/repairs-1.jpg')}}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Repairs 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="{{asset('assets/img/projects/repairs-1.jpg')}}" title="Repairs 1" data-gallery="portfolio-gallery-repairs"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+              <div class="portfolio-content h-100">
+                <img src="{{asset('assets/img/projects/design-1.jpg')}}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Design 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="{{asset('assets/img/projects/design-1.jpg')}}" title="Repairs 1" data-gallery="portfolio-gallery-book"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+              <div class="portfolio-content h-100">
+                <img src="{{asset('assets/img/projects/remodeling-2.jpg')}}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Remodeling 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="{{asset('assets/img/projects/remodeling-2.jpg')}}" title="Remodeling 2"
+                    data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+              <div class="portfolio-content h-100">
+                <img src="{{asset('assets/img/projects/construction-2.jpg')}}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Construction 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="{{asset('assets/img/projects/construction-2.jpg')}}" title="Construction 2"
+                    data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
+              <div class="portfolio-content h-100">
+                <img src="{{asset('assets/img/projects/repairs-2.jpg')}}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Repairs 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="{{asset('assets/img/projects/repairs-2.jpg')}}" title="Repairs 2" data-gallery="portfolio-gallery-repairs"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+              <div class="portfolio-content h-100">
+                <img src="{{asset('assets/img/projects/design-2.jpg')}}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Design 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="{{asset('assets/img/projects/design-2.jpg')}}" title="Repairs 2" data-gallery="portfolio-gallery-book"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+              <div class="portfolio-content h-100">
+                <img src="{{asset('assets/img/projects/remodeling-3.jpg')}}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Remodeling 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="{{asset('assets/img/projects/remodeling-3.jpg')}}" title="Remodeling 3"
+                    data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+              <div class="portfolio-content h-100">
+                <img src="{{asset('assets/img/projects/construction-3.jpg')}}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Construction 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="{{asset('assets/img/projects/construction-3.jpg')}}" title="Construction 3"
+                    data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
+              <div class="portfolio-content h-100">
+                <img src="{{asset('assets/img/projects/repairs-3.jpg')}}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Repairs 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="{{asset('assets/img/projects/repairs-3.jpg')}}" title="Repairs 2" data-gallery="portfolio-gallery-repairs"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+              <div class="portfolio-content h-100">
+                <img src="{{asset('assets/img/projects/design-3.jpg')}}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Design 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="{{asset('assets/img/projects/design-3.jpg')}}" title="Repairs 3" data-gallery="portfolio-gallery-book"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+          </div><!-- End Projects Container -->
+
+        </div>
+
+      </div>
+    </section><!-- End Our Projects Section -->
+
+  </main><!-- End #main -->
+{% endblock %}
+{% block stylesheets %}
+<style>
+    body { background: #F5F5F5; font: 18px/1.5 sans-serif; }
+    h1, h2 { line-height: 1.2; margin: 0 0 .5em; }
+    h1 { font-size: 36px; }
+    h2 { font-size: 21px; margin-bottom: 1em; }
+    p { margin: 0 0 1em 0; }
+    a { color: #0000F0; }
+    a:hover { text-decoration: none; }
+    code { background: #F5F5F5; max-width: 100px; padding: 2px 6px; word-wrap: break-word; }
+    #wrapper { background: #FFF; margin: 1em auto; max-width: 800px; width: 95%; }
+    #container { padding: 2em; }
+    #welcome, #status { margin-bottom: 2em; }
+    #welcome h1 span { display: block; font-size: 75%; }
+    #icon-status, #icon-book { float: left; height: 64px; margin-right: 1em; margin-top: -4px; width: 64px; }
+    #icon-book { display: none; }
+
+    @media (min-width: 768px) {
+        #wrapper { width: 80%; margin: 2em auto; }
+        #icon-book { display: inline-block; }
+        #status a, #next a { display: block; }
+
+        @-webkit-keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
+        @keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
+        .sf-toolbar { opacity: 0; -webkit-animation: fade-in 1s .2s forwards; animation: fade-in 1s .2s forwards;}
+    }
+</style>
+{% endblock %}
