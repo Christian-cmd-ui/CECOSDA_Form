@@ -123,7 +123,11 @@ class DefaultController extends Controller
             return $this->redirectToRoute('candidature_success');
         }
 
+<<<<<<< HEAD
         return $this->render('default/candidature.html.twig', [
+=======
+        return $this->render('default/formateur.html.twig', [
+>>>>>>> 945037cbdc8c646be1258abe043972486fd980a1
             'form' => $form->createView(),
         ]);
     }
