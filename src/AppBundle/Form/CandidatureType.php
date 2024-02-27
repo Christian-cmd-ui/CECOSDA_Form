@@ -13,7 +13,12 @@ class CandidatureType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('cv')->add('photo');
+        $builder
+        ->add('cv')
+        ->add('photo')
+        ->add('nom')
+        ->add('email')
+        ->add('telephone');
     }/**
      * {@inheritdoc}
      */

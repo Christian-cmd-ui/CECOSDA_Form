@@ -11,7 +11,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class CandidatureController extends Controller
 {
     /**
-     * @Route("/formateur", name="formateur")
+     * @Route("/candidature", name="candidature")
      */
     public function candidatureAction(Request $request)
     {
@@ -46,7 +46,7 @@ class CandidatureController extends Controller
             return $this->redirectToRoute('candidature_success');
         }
 
-        return $this->render('default/formateur.html.twig', [
+        return $this->render('default/candidature.html.twig', [
             'form' => $form->createView(),
         ]);
     }
