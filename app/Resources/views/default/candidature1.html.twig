@@ -1,0 +1,102 @@
+{% extends 'base.html.twig'%}
+
+{% block body %}
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Candidature</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 400px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        
+        input[type="file"] {
+            border: none;
+            padding: 0;
+        }
+        
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulaire de Candidature</h1>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required>
+            
+            <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom" name="prenom" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="telephone">Numéro de téléphone:</label>
+            <input type="tel" id="telephone" name="telephone" required>
+            
+            <label for="cv">CV:</label>
+            <input type="file" id="cv" name="cv" accept=".pdf" required>
+            
+            <label for="photo">Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/jpeg, image/png" required>
+            
+            <label for="lettre_motivation">Lettre de motivation:</label>
+            <textarea id="lettre_motivation" name="lettre_motivation" rows="4" required></textarea>
+            
+            <label for="adresse">Adresse:</label>
+            <textarea id="adresse" name="adresse" rows="2" required></textarea>
+            
+            <input type="submit" value="Soumettre">
+        </form>
+    </div>
+</body>
+</html>
+
+{% endblock %}

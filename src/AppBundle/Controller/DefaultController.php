@@ -55,6 +55,17 @@ class DefaultController extends Controller
     }
 
     /**
+     * @Route("/candidature1", name="candidature1")
+     */
+    public function candidature1Action(Request $request)
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/candidature1.html.twig', [
+            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
+        ]);
+    }
+
+    /**
      * @Route("/services", name="services")
      */
     public function servicesAction(Request $request)
@@ -121,14 +132,6 @@ class DefaultController extends Controller
             $em->flush();
 
             return $this->redirectToRoute('candidature_success');
-        }
-
-<<<<<<< HEAD
-        return $this->render('default/candidature.html.twig', [
-=======
-        return $this->render('default/formateur.html.twig', [
->>>>>>> 945037cbdc8c646be1258abe043972486fd980a1
-            'form' => $form->createView(),
-        ]);
+        };
     }
 }
