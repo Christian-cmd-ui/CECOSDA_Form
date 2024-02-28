@@ -26,24 +26,8 @@ class Candidature
      */
     private $telephone;
     /**
-<<<<<<< HEAD
-     * @ORM\Column(name="nom", type="string", length=255, nullable=false)
-     */
-    public $nom;
-    /**
-     * @ORM\Column(name="email", type="string", length=255, nullable=false)
-     */
-    public $email;
-    /**
-     * @ORM\Column(name="telephone", type="string", length=255, nullable=false)
-     */
-    public $telephone;
-    /**
      * @ORM\Column(type="string", length=255, nullable=false)
      * @Assert\File(mimeTypes={ "application/pdf" })
-=======
-     * @ORM\Column(type="string", length=255, nullable=true)
->>>>>>> 945037cbdc8c646be1258abe043972486fd980a1
      */
     private $cv;
 
@@ -55,10 +39,6 @@ class Candidature
 
     // Getters et setters pour les propriétés...
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 945037cbdc8c646be1258abe043972486fd980a1
     public function getNom()
     {
         return $this->nom;
@@ -70,10 +50,6 @@ class Candidature
 
         return $this;
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> 945037cbdc8c646be1258abe043972486fd980a1
     public function getEmail()
     {
         return $this->email;
@@ -85,10 +61,6 @@ class Candidature
 
         return $this;
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> 945037cbdc8c646be1258abe043972486fd980a1
     public function getTelephone()
     {
         return $this->telephone;
